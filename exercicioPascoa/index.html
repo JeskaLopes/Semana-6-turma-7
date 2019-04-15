@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./icon-bunny.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href ="style.css">
+    <title>Entrega de Ovos da Páscoa</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h1 class="titulo">🐰 Presentes de Páscoa 🐇</h1>
+            <form>
+                <fieldset>
+                    <label for ="Pais">País</label>
+                    <select id="pais">
+                        <option value="br">Brasil</option>
+                        <option value="au">Austrália</option>
+                        <option value="us">Estados Unidos</option>
+                        <option value="uk">Inglaterra</option>
+                        <option value="default" selected="true">Selecione uma Opção</option>
+                    </select>
+                </fieldset>
+                <fieldset class="escondido" id="escondido">
+                    <label for ="cidade">Cidade</label>
+                    <select name="cidade" id="cidade">
+                        <option value="sp">São Paulo</option>
+                        <option value="pa">Porto Alegre</option>
+                        <option value="cs">Caxias do Sul</option>
+                        <option value="default" selected="true">Selecione uma Opção</option>
+                    </select>
+                </fieldset>
+            </form>
+            <div class="resultado" id="resultado"></div>
+        </section>
+    </main> 
+</body>
+</html>

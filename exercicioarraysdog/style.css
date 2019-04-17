@@ -1,0 +1,14 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+}
+
+h1{
+    background-color: rgb(148, 119, 175);
+}
+
+div{
+    text-shadow: 4px; 
+    background-color: rgb(148, 119, 175); 
+}
+

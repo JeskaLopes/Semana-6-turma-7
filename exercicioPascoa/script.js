@@ -11,7 +11,6 @@ window.addEventListener('DOMContentLoaded', function() {
         resultado.innerHTML="";
         escondido.style.display ="none";
         
-       
         if(paises.value =="br"){
             escondido.style.display = "block"; 
 
@@ -22,7 +21,6 @@ window.addEventListener('DOMContentLoaded', function() {
             else if(cidade.value=="cs"){
                 resultado.innerHTML="🍫 Minha amiga vai ganhar um ovo de chocolate ao leite e um ovo de chocolate branco 🍬";
             }
-
             else if(cidade.value=="pa"){
                 resultado.innerHTML="🍬 Minha amiga vai ganhar um ovo de chocolate amargo e um ovo de chocolate ao leite 🍫";
             }
@@ -31,7 +29,6 @@ window.addEventListener('DOMContentLoaded', function() {
             }
             });
         }
-
         else if(paises.value =="au"){
             resultado.innerHTML="🍫 Minha amiga vai ganhar dois ovos de chocolate branco 🍬";
             

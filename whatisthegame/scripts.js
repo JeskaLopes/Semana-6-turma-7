@@ -20,8 +20,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 function displayGifs1() {
-    displayGifs.innerHTML = `<img width="400" src=${jogos[0]} />`;
-  }
+    displayGifs.innerHTML = jogos[0] };
 
   function displayGifs2() {
     displayGifs.innerHTML = `<img width="300" src=${jogos[1]} />`;

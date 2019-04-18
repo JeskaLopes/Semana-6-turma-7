@@ -1,0 +1,49 @@
+body{
+    text-align:center;
+    background-color: rgb(253, 211, 218); 
+    font-family: 'News Cycle', sans-serif;
+}
+
+.container{
+    margin: 0 auto; 
+}
+
+fieldset{
+    border-style: dotted ; 
+    border-color: rgb(116, 189, 207); 
+    width: 50%; 
+    margin: 0 auto; 
+    padding: 2%; 
+    margin-bottom: 3%; 
+}
+
+.checkbox1, .checkbox2, .checkbox3{
+    margin: 0 auto; 
+    border: solid;
+    border-width: 2px;
+    width: 60%;
+    margin-bottom: 3%; 
+    border-color: rgb(233, 118, 181); 
+}
+
+img{
+    margin-bottom: 3%; 
+}
+
+button{
+    padding: 10px;
+    border: solid  black;
+    background-color: pink;
+    border-width: 1px
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultado > img {
+    max-width: 50%;
+
+}

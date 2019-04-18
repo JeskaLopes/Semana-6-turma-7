@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: 'Pretendo';
+    src: url('./fonte/Pretendo.eot?#iefix') format('embedded-opentype'),  url('./fonte/Pretendo.woff') format('woff'), url('./fonte/Pretendo.ttf')  format('truetype'), url('./fonte/Pretendo.svg#Pretendo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body{
+    font-family: 'Neucha', cursive;
+    margin: 0; 
+    text-align: center;
+    background-color: rgb(241, 203, 203);
+    background-repeat: no-repeat; 
+}
+
+button{
+    font-family: 'Neucha', cursive; 
+    font-size: 20px; 
+    padding:2% 4% 2% 4%; 
+    color: white;
+    background-color: rgb(207, 145, 155); 
+    border: none;
+    border-radius: 5%; 
+
+}
+
+.titulo{
+    font-family:'Pretendo';
+    margin-top: 30px; 
+    font-size: 50px; 
+    color:rgb(240, 46, 46);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+.displaygifs{
+    padding: 40px; 
+    font-size: 40px; 
+}
+

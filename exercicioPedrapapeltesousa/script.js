@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
     // aqui vai todo o código a ser executado na página
     const nome=document.getElementById('nomeJogador')
-
     //const papel=document.getElementById('papel');
    // const tesoura=document.getElementById('tesoura');
    // const lagarto=document.getElementById('lagarto');
@@ -10,9 +9,10 @@ window.addEventListener('DOMContentLoaded', function() {
     const computador=['pedra', 'papel','tesoura','lagarto','spock'];
     const opcao= document.getElementById('opcao');
 
-    opcao.addEventListener("change", function(){
+    opcao.addEventListener('change', function(){
         const computadorEscolha = computador[Math.floor(Math.random()*computador.length)];
         console.log(computadorEscolha);
+        vencedor.innerHTML=" "
      
 
        if(opcao.value =='pedra'){
@@ -32,22 +32,21 @@ window.addEventListener('DOMContentLoaded', function() {
                 vencedor.innerHTML="Computador escolheu spock, você perdeu"; 
             }
         };
-
         if(opcao.value=='papel'){
             if(computadorEscolha=='papel'){
                 vencedor.innerHTML="Empate"
             }
             else if(computadorEscolha=='tesoura'){
-                vencedor.innerHTML="Computador escolheu tesoura, você perdeu"
+                vencedor.innerHTML="Computador escolheu tesoura, você perdeu";
             }
             else if(computadorEscolha=='pedra'){
-                vencedor.innerHTML="Computador escolheu pedra, você ganhou"
+                vencedor.innerHTML="Computador escolheu pedra, você ganhou";
             }
             else if(computadorEscolha =='lagarto'){
-                vencedor.innerHTML="Computador escolheu largarto, você perdeu"
+                vencedor.innerHTML="Computador escolheu largarto, você perdeu";
             }
             else if(computadorEscolha=="spock"){
-                vencedor.innerHTML="Computador escolheu spock, você perdeu"
+                vencedor.innerHTML="Computador escolheu spock, você perdeu";
             }
         }
          if(opcao.value =='tesoura' ){
@@ -55,65 +54,57 @@ window.addEventListener('DOMContentLoaded', function() {
                 vencedor.innerHTML="Empate"
             }
             else if(computadorEscolha =='papel'){
-                vencedor.innerHTML="Computador escolheu papel, você ganhou"
+                vencedor.innerHTML="Computador escolheu papel, você ganhou";
             }
             else if(computadorEscolha=='pedra'){
-                vencedor.innerHTML="Computador escolheu pedra, você perdeu"
+                vencedor.innerHTML="Computador escolheu pedra, você perdeu";
             }
 
             else if(computadorEscolha=='lagarto'){
-                vencedor.innerHTML="Computador escolheu lagarto, você ganhou"
+                vencedor.innerHTML="Computador escolheu lagarto, você ganhou";
             }
             else if(computadorEscolha=='spock'){
-                vencedor.innerHTML="Computador escolheu spock, você perdeu"
+                vencedor.innerHTML="Computador escolheu spock, você perdeu";
             }
         }
-
         if(opcao.value=='lagarto'){
             if(computadorEscolha=='lagarto'){
                 vencedor.innerHTML="Empate"
             }
             else if(computadorEscolha=='pedra'){
-                vencedor.innerHTML="Computador escolheu pedra, você perdeu"
+                vencedor.innerHTML="Computador escolheu pedra, você perdeu";
             }
             else if(computadorEscolha=='papel'){
-                vencedor.innerHTML="Computador escolheu papel, você ganhou"
+                vencedor.innerHTML="Computador escolheu papel, você ganhou";
             }
             else if(computadorEscolha=='tesoura'){
-                vencedor.innerHTML="Computador escolheu tesoura, você perdeu"
+                vencedor.innerHTML="Computador escolheu tesoura, você perdeu";
             }
             else if(computadorEscolha=='spock'){
-                vencedor.innerHTML="Computador escolheu spock, você ganhou"
+                vencedor.innerHTML="Computador escolheu spock, você ganhou";
             }
         }
-        
         if(opcao.value=='spock'){
             if(computadorEscolha=='spock'){
                 vencedor.innerHTML="Empate"
             }
             else if(computadorEscolha=='pedra'){
-                vencedor.innerHTML="Computador escolheu pedra, você ganhou"
+                vencedor.innerHTML="Computador escolheu pedra, você ganhou";
             }
             else if(computadorEscolha=='papel'){
-                vencedor.innerHTML="Computador escolheu papel, você ganhou"
+                vencedor.innerHTML="Computador escolheu papel, você ganhou";
             }
             else if(computadorEscolha=='tesoura'){
-                vencedor.innerHTML="Computador escolheu tesoura, você perdeu"
+                vencedor.innerHTML="Computador escolheu tesoura, você perdeu";
             }
             else if(computadorEscolha=='lagarto'){
-                vencedor.innerHTML="Computador escolheu lagarto, você perdeu"
+                vencedor.innerHTML="Computador escolheu lagarto, você perdeu";
             }
         }
-
         else{
 
         }
-        
-        
-
     });
-
-
 /*
     switch(expressão) {
         case pedra:
